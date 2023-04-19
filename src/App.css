@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
+@media screen and (min-width: 1200px) {
+  .enterTextContainer {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 250px;
+    margin: 10px;
+    /* margin-left: 150px; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    border-radius: 10px;
+    height: 20px;
+    color: gray;
+    align-items: center;
+  }
+  .cityContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContainer {
+    background: url('./background.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    align-items: center;
+  }
+  .enterContainer {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: larger;
+    background-color: blue;
+  }
+  .popup {
+    background-color: rgb(200, 40, 43);
+    z-index: 100;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: -50px;
   }
 }
+@media screen and (max-width: 450px) {
+  /* .mainContainer{
+    display:none;
+  } */
+  .enterTextContainer {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    border-radius: 10px;
+    height: 20px;
+    color: gray;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .cityContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContainer {
+    background: url('./background.jpeg') repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    align-items: center;
+  }
+  .enterContainer {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: blue;
+  }
+  .popup {
+    background-color: rgb(200, 40, 43);
+    z-index: 100;
+    /* font-weight: lighter; */
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: -50px;
+   
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 1100px) {
+  .mainContainer {
+    display: none;
   }
 }
